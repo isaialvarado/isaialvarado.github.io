@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+ul.ingredients-list {
+  list-style: square inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+header > img {
+  width: 100px;
+}
+
+
+ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input[type="submit"], select {
+  cursor: pointer;
+  outline: none;
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  background-image: url(stars.png);
+  vertical-align: bottom;
+  outline: none;
+}
+
+input[type="radio"]:checked {
+  background-position: 30px 30px;
+}
+
+input:last-child {
+  background-color: gold;
+}
+
+input:last-child:hover {
+  -webkit-filter: brightness(90%);
+}
+
+ul.ingredients-list li:nth-of-type(even) {
+  background: lightgrey;
+}
+
+h2 + .user_review {
+  border-top: 1px solid black;
+}
