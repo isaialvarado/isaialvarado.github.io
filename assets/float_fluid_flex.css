@@ -11,7 +11,7 @@ h2 {
   font-size: 32px;
 }
 
-ul.ingredients-list {
+.ingredients-list {
   list-style: square inside;
 }
 
@@ -21,9 +21,10 @@ ol {
 
 header > img {
   width: 100px;
+  float: left;
 }
 
-ul li a {
+ul li a, figcaption a {
   text-decoration: none;
   color: inherit;
 }
@@ -73,23 +74,15 @@ nav ul li a {
 }
 
 nav {
-  display: inline-block;
+  float: right;
 }
 
 body {
   margin: 0 auto;
-  width: 900px;
+  width: 60%;
 }
 
 aside {
-  width: 180px;
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 15px;
-}
-
-section {
-  width: 700px;
   display: inline-block;
 }
 
@@ -99,15 +92,12 @@ section {
 
 input[type="text"], select {
   display: block;
-  width: 175px;
 }
 
 select {
   margin: 10px 0;
-  width: 180px;
 }
 
 textarea {
   display: block;
-  width: 350px;
 }
