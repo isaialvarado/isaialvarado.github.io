@@ -30,21 +30,6 @@
       </nav>
     </header>
 
-    <section>
-      <h1>Quinoa Salad</h1>
-
-      <h2 id="description">Description</h2>
-      <p>
-        Quinoa salad recipe based on recipe on <a href="http://allrecipes.com/recipe/229156/zesty-quinoa-salad/">allrecipes.com</a>.
-      </p>
-      <figure>
-        <img src="http://images.media-allrecipes.com/userphotos/560x315/1005880.jpg" alt="quinoa-salad-picture" />
-        <figcaption>
-          <a href="https://en.wikipedia.org/wiki/Quinoa">Quinoa</a>
-        </figcaption>
-      </figure>
-    </section>
-
     <aside>
       <h2 id="ingredients">Ingredients</h2>
         <ul class="ingredients-list">
@@ -61,8 +46,21 @@
     </aside>
 
     <section>
+      <h1>Quinoa Salad</h1>
+
+      <h2 id="description">Description</h2>
+      <p>
+        Quinoa salad recipe based on recipe on <a href="http://allrecipes.com/recipe/229156/zesty-quinoa-salad/">allrecipes.com</a>.
+      </p>
+      <figure>
+        <img src="http://images.media-allrecipes.com/userphotos/560x315/1005880.jpg" alt="quinoa-salad-picture" />
+        <figcaption>
+          <a href="https://en.wikipedia.org/wiki/Quinoa">Quinoa</a>
+        </figcaption>
+      </figure>
+
       <h2 id="directions">Directions</h2>
-      <ol>
+      <ol class="directions">
         <li>
           Bring quinoa and water to a boil in a saucepan. Reduce heat to medium-low, cover, and simmer until quinoa is tender and water has been absorbed, 10 to 15 minutes. Set aside to cool.
         </li>
@@ -73,22 +71,18 @@
           Combine quinoa, tomatoes, black beans, and green onions together in a bowl. Pour dressing over quinoa mixture; toss to coat. Stir in cilantro. Serve immediately or chill in refrigerator.
         </li>
       </ol>
-    </section>
-
     <section id="reviews">
       <h2>Reviews</h2>
       <form id="review-form" action="/reviews" method="post">
         <label for="reviewer">Name</label>
         <input type="text" id="reviewer" name="name">
 
-        <label for="rating">Rating</label>
         1 <input type="radio" id="rating" name="rating" value ="1" checked>
         2 <input type="radio" id="rating" name="rating" value ="2">
         3 <input type="radio" id="rating" name="rating" value ="3">
         4 <input type="radio" id="rating" name="rating" value ="4">
         5 <input type="radio" id="rating" name="rating" value ="5">
 
-        <label for="expertise">Cooking Expertise</label>
         <select id="expertise" name="expertise">
           <option disabled selected>Select Cooking Expertise</option>
           <option value="Sometimes Cook">Sometimes Cook</option>
@@ -97,14 +91,13 @@
           <option value="Professional Chef">Professional Chef</option>
         </select>
 
-        <label>Review
-          <textarea name="review" rows="5" cols="30">
-            Type your review here
-          </textarea>
-        </label>
+        <textarea name="review" rows="5" cols="30">
+Type your review here
+        </textarea>
 
         <input type="submit" value="Submit Review">
       </form>
+    </section>
     </section>
 
     <footer>

@@ -23,7 +23,6 @@ header > img {
   width: 100px;
 }
 
-
 ul li a {
   text-decoration: none;
   color: inherit;
@@ -45,7 +44,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-  background-position: 30px 30px;
+  background-position: bottom;
 }
 
 input:last-child {
@@ -62,4 +61,53 @@ ul.ingredients-list li:nth-of-type(even) {
 
 h2 + .user_review {
   border-top: 1px solid black;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 20px;
+  display: block;
+}
+
+nav {
+  display: inline-block;
+}
+
+body {
+  margin: 0 auto;
+  width: 900px;
+}
+
+aside {
+  width: 180px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+
+section {
+  width: 700px;
+  display: inline-block;
+}
+
+.ingredients-list li, .directions li {
+  margin: 15px 0px 15px 0px;
+}
+
+input[type="text"], select {
+  display: block;
+  width: 175px;
+}
+
+select {
+  margin: 10px 0;
+  width: 180px;
+}
+
+textarea {
+  display: block;
+  width: 350px;
 }
